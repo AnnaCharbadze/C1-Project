@@ -1,21 +1,21 @@
 # C1_Project - School Database Application
 
-This project is a Minimum Viable Product (MVP) that demonstrates read functionality for a School Database using ASP.NET Core Web API and MVC. The application connects to a MySQL database named School and retrieves data for Teachers, Students, and Courses. It gets records in JSON format and displayes MVC pages. A search functionality is also implemented. 
+This project is a Minimum Viable Product (MVP) demonstrating read functionality for a School Database using ASP.NET Core Web API and MVC. The application connects to a MySQL database named School and retrieves data for Teachers, Students, and Courses. It gets records in JSON format and displays MVC pages. A search functionality is also implemented. 
 
 ## Features
 
 - **Teachers**
-  - List teachers
-  - Be able to  filter by name and hire date range.
-  - Retrieve a specific teacher by ID.
+  - Lists teachers
+  - Can  filter by name and hire date range.
+  - Retrieves a specific teacher by ID.
 - **Students**
-  - List students.
-  - Retrieve a specific student by ID.
+  - Lists students.
+  - Retrieves a specific student by ID.
 - **Courses**
-  - List courses.
-  - Retrieve a specific course by ID.
+  - Lists courses.
+  - Retrieves a specific course by ID.
   - **Error Handling**
-  - Returning error when trying to access a teacher that does not exists.
+  - Returns error when trying to access a teacher that does not exists.
 - **MVC Web Pages**
 - **Swagger Integration**
  

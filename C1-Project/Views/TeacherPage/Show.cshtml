@@ -1,0 +1,13 @@
+﻿@model C1_Project.Models.Teacher
+
+@{
+    ViewBag.Title = "Teacher Details";
+}
+
+<h2>Teacher Details</h2>
+<div>
+    <h3>@Model.TeacherFName @Model.TeacherLName</h3>
+    <p><strong>Employee Number:</strong> @Model.EmployeeNumber</p>
+    <p><strong>Hire Date:</strong> @Model.HireDate.ToString("yyyy-M-d")</p>
+    <p><strong>Salary:</strong> @Model.Salary</p>
+</div>

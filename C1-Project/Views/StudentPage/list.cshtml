@@ -1,0 +1,8 @@
+﻿@model IEnumerable<C1_Project.Models.Student>
+
+@foreach (var student in Model)
+{
+    <div>
+        <a href="/StudentPage/Show/@student.StudentId">@student.StudentFName @student.StudentLName</a>
+    </div>
+}

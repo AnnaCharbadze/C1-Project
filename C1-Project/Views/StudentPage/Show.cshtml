@@ -1,0 +1,12 @@
+﻿@model C1_Project.Models.Student
+
+@{
+    ViewBag.Title = "Student Details";
+}
+
+<h2>Student Details</h2>
+<div>
+    <h3>@Model.StudentFName @Model.StudentLName</h3>
+    <p><strong>Student Number:</strong> @Model.StudentNumber</p>
+    <p><strong>Enroll Date:</strong> @Model.EnrollDate.ToShortDateString()</p>
+</div>

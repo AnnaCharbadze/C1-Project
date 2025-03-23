@@ -1,0 +1,14 @@
+﻿@model C1_Project.Models.Course
+
+@{
+    ViewBag.Title = "Course Details";
+}
+
+<h2>Course Details</h2>
+<div>
+    <h3>@Model.CourseName</h3>
+    <p><strong>Course Code:</strong> @Model.CourseCode</p>
+    <p><strong>Teacher ID:</strong> @Model.TeacherId</p>
+    <p><strong>Start Date:</strong> @Model.StartDate.ToShortDateString()</p>
+    <p><strong>Finish Date:</strong> @Model.FinishDate.ToShortDateString()</p>
+</div>

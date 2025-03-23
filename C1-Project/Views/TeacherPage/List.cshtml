@@ -1,0 +1,33 @@
+﻿@model IEnumerable<C1_Project.Models.Teacher>
+
+@{
+    ViewBag.Title = "Teachers List";
+}
+
+<h2>Teachers List</h2>
+
+<!-- Search Form -->
+<form method="get" action="/TeacherPage/List">
+    <label for="SearchKey">Search Name:</label>
+    <input type="text" name="SearchKey" id="SearchKey"
+           value="@ViewContext.HttpContext.Request.Query["SearchKey"]" />
+
+    <label for="hireDateFrom">Hire Date From:</label>
+    <input type="date" name="hireDateFrom" id="hireDateFrom"
+           value="@ViewContext.HttpContext.Request.Query["hireDateFrom"]" />
+
+    <label for="hireDateTo">Hire Date To:</label>
+    <input type="date" name="hireDateTo" id="hireDateTo"
+           value="@ViewContext.HttpContext.Request.Query["hireDateTo"]" />
+
+    <button type="submit">Search</button>
+</form>
+
+@foreach (var teacher in Model)
+{
+    <div>
+        <a href="/TeacherPage/Show/@teacher.TeacherId">
+            @teacher.TeacherFName @teacher.TeacherLName – Hired on @teacher.HireDate.ToShortDateString()
+        </a>
+    </div>
+}
